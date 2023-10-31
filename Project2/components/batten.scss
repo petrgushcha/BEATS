@@ -1,0 +1,32 @@
+.batten{
+    font-size: 19px;
+    font-weight: bold;
+    padding: 18px 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 100px;
+    line-height: 1;
+    border: none;
+}
+
+.batten--them--red{
+    background-color: $red;
+    color: #fff;
+}
+
+.batten--them--red:hover{
+    background-color: #fff;
+    color: $red;
+}
+
+.batten--them--transparent{
+    background-color: transparent;
+    color: #fff;
+    text-transform: none;
+    font-style: 16px;
+    font-weight: 400;
+
+    &:hover{
+        color: $red;
+    }
+}

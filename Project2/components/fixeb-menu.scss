@@ -1,0 +1,48 @@
+.fixeb-menu{
+    position: fixed;
+    top: 50%;
+    right: 3%;
+    transform: translate(-50%, -50%);
+    z-index: $z-fixeb-menu;
+
+}
+
+.fixt-menu__item{
+    margin-bottom: 5px;
+
+    &:last-child{
+        margin-bottom: 0px;
+    }
+
+    &--active{
+        .fixeb-menu__link{
+            border-color: $red;
+             
+            &::before{
+                background-color: $red;
+            }
+        }
+    }
+}
+
+.fixeb-menu__link{
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    display: block;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

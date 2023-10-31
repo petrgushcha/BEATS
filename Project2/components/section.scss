@@ -1,0 +1,27 @@
+
+.section{
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.section__title{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color:$black;
+}
+
+.section__conteiner{
+    height: 100%;
+    max-width: 915px;
+
+    &::after{
+        content: url("../img/Vector2.png");
+        position: absolute;
+        left: 320px;
+        bottom: -30px;
+    }
+}
