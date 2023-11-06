@@ -5,13 +5,17 @@
     transform: translate(-50%, -50%);
     z-index: $z-fixeb-menu;
 
+
+    @include tablets{
+        display: none;
+    }
 }
 
 .fixt-menu__item{
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
 
     &:last-child{
-        margin-bottom: 0px;
+        margin-bottom: rem(0px);
     }
 
     &--active{
@@ -26,18 +30,18 @@
 }
 
 .fixeb-menu__link{
-    width: 19px;
-    height: 19px;
+    width: rem(19px);
+    height: rem(19px);
     border-radius: 50%;
-    border: 2px solid transparent;
+    border: rem(2px) solid transparent;
     display: block;
     position: relative;
 
     &::before{
         content: "";
         display: block;
-        width: 6px;
-        height: 6px;
+        width: rem(6px);
+        height: rem(6px);
         border-radius: 50%;
         background-color: $black;
         position: absolute;

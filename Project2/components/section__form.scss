@@ -5,7 +5,12 @@
 
 .section__title-form{
     color: #fff;
-    font-style: 200px;
+    font-style: rem(200px);
     font-weight: bold;
-    margin-top: 150px;
+    margin-top: rem(150px);
+
+
+    @include tablets{
+        margin-top: rem(80px);
+    }
 }

@@ -1,20 +1,32 @@
 .hedline__title{
-    margin-bottom: 0px;
+    margin-bottom: rem(0px);
     color: $black;
     text-transform: uppercase;
 }
 
 .hedline{
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: rem(100px);
+
+    @include phones{
+        margin-bottom: rem(50px);
+    }
 }
 
 .hedline__subtitle{
     padding: 0 22%;
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 400;
+
+    @include phones{
+        padding: 0 10%;
+    }
 }
 
 .section__hedline{
-    padding-top: 87px;
+    padding-top: rem(87px);
+
+    @include phones{
+        padding-top: rem(40px);
+    }
 }

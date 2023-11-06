@@ -1,6 +1,8 @@
 $containerwidth: 915px;
 $baseFontSize: 18px;
 
+$tablets: 768px;
+$phones: 480px;
 
 $red: #E01F3D;
 $body: #666666;
@@ -8,6 +10,7 @@ $black: #292929;
 
 $z-fixeb-menu: 100;
 
+@import "media.scss";
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normolize/8.0.1/normolize.css");
 
@@ -20,6 +23,7 @@ $z-fixeb-menu: 100;
 @import "../components/features.scss";
 @import "../components/batten.scss";
 @import "../components/feature.scss";
+@import "../components/hamburger.scss";
 
 @import "../components/section.scss";
 @import "../components/hedline.scss";
@@ -32,7 +36,8 @@ $z-fixeb-menu: 100;
 @import "../components/section__form.scss";
 @import "../components/form.scss";
 @import "../components/radio.scss";
-
+@import "../components/footer.scss";
+@import "../components/social.scss";
 
 
 @import "../components/fixeb-menu.scss";

@@ -1,0 +1,38 @@
+.footer__conteiner{
+    position: relative;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: rem(87px);
+    position: absolute;
+    bottom: 0;
+
+    @include phones{
+        height: rem(151px);
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.footer__address{
+    font-size: $baseFontSize;
+    font-weight: 400;
+    color: $black;
+}
+
+.footer__phont-number{
+    
+    @include phones{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.footer__contacts{
+    @include phones{
+        margin-bottom: rem(10px);
+    }
+}

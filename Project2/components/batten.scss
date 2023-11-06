@@ -1,10 +1,10 @@
 .batten{
-    font-size: 19px;
+    font-size: rem(19px);
     font-weight: bold;
-    padding: 18px 35px;
+    padding: rem(18px) rem(35px);
     text-transform: uppercase;
     text-decoration: none;
-    border-radius: 100px;
+    border-radius: rem(100px);
     line-height: 1;
     border: none;
 }
@@ -23,7 +23,7 @@
     background-color: transparent;
     color: #fff;
     text-transform: none;
-    font-style: 16px;
+    font-style: rem(16px);
     font-weight: 400;
 
     &:hover{

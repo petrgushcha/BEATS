@@ -1,22 +1,46 @@
+.reviems{
+
+    &::before{
+        width: rem(83px);
+        height: rem(83px);
+        border-radius: 50%;
+        background-color: #fff;
+    }
+}
+
 .reviems__display{
     background: #F8FAF9;
-    padding: 50px 49px 34px;
-    margin-bottom: 70px;
+    padding: rem(50px) rem(49px) rem(34px);
+    margin-bottom: rem(70px);
+    position: relative;
 }
 
 .reviems__title{
     text-transform: uppercase;
-    margin: 60px 0 60px;
+    margin: rem(60px) 0 rem(60px);
 }
 
 .reviems__display-inner{
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .reviems__avatar{
-    width: 254px;
-    height: 260px;
-    margin-right: 40px;
+    width: rem(254px);
+    height: rem(260px);
+    margin-right: rem(40px);
+
+    @include tablets {
+        margin-right: rem(0px);
+        width: rem(130px);
+        height: rem(130px);
+        margin-bottom: rem(32px);
+    }
 }
 
 .reviems-avatar__img{
@@ -27,22 +51,22 @@
 
 .reviems__content{
     flex: 1;
-    margin-top: 30px;
+    margin-top: rem(30px);
 }
 
 .reviems_title{
-    font-style: 30px;
+    font-style: rem(30px);
     font-weight: bold;
     color: $black;
-    margin-bottom: 22px;
+    margin-bottom: rem(22px);
 }
 
 .reviems__text{
-    margin-bottom: 40px;
+    margin-bottom: rem(40px);
 }
 
 .reviems__autor{
-    font-style: 18px;
+    font-style: rem(18px);
     font-weight: bold;
     color: $black;
 }
@@ -52,12 +76,13 @@
     justify-content: center;
 }
 
-.reviems{
+.section__reviems{
     position: relative;
 
     &::after{
         content: url("../img/Ellipse7.png");
         position: absolute;        
-        bottom: -137px;
+        bottom: rem(-30px);
+        left: 20%;
     }
 }
