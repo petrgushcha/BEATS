@@ -16,6 +16,12 @@
     }
 }
 
+.benefit__img{
+    @include phones{
+        margin-right: rem(20px);
+    }
+}
+
 .benefit__img-wrapper{
     display: inline-block;
     width: rem(119px);

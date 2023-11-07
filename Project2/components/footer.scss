@@ -2,13 +2,23 @@
     position: relative;
 }
 
+.map__section{
+    position: relative;
+}
+
+.map{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+}
+
 .footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: rem(87px);
     position: absolute;
-    bottom: 0;
+    bottom: rem(0px);
 
     @include phones{
         height: rem(151px);

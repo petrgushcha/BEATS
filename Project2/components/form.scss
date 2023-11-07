@@ -25,6 +25,12 @@
     &:last-child{
         margin-right: rem(0px);
     }
+
+    @include phones{
+        &:last-child{
+            margin-bottom: rem(0px);
+        }
+    }
 }
 
 .form__row{
