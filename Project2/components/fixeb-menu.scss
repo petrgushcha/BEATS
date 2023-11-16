@@ -5,6 +5,9 @@
     transform: translate(-50%, -50%);
     z-index: $z-fixeb-menu;
 
+    @include fixeb-menu{
+        right: 0;
+    }
 
     @include tablets{
         display: none;

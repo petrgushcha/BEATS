@@ -51,6 +51,18 @@ h6 {
   font-weight: normal;
 }
 
+h1 {
+  font-size: 2.6666666667rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -171,11 +183,9 @@ img {
 }
 
 .hero__main-title {
-  font-size: 2.6666666667rem;
   line-height: 1.1;
   font-weight: bold;
   margin-bottom: 0.8333333333rem;
-  text-transform: uppercase;
 }
 
 .hero__title-desc {
@@ -524,6 +534,114 @@ img {
   .benefit__text {
     text-align: start;
   }
+}
+
+.slider__section {
+  background-color: #F8FAF9;
+  position: relative;
+}
+.slider__section::before {
+  position: absolute;
+  right: 10%;
+  bottom: -1.6666666667rem;
+  content: url(../img/Rectangle13.png);
+}
+
+.slider-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 5%;
+}
+.slider__column:last-child {
+  margin-right: 0;
+}
+
+.slider__row {
+  margin-bottom: 3%;
+}
+
+.slider__row-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider__text {
+  margin-bottom: 3%;
+}
+
+.slider__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 3.3333333333rem;
+}
+
+.slider__inf {
+  margin-right: 30%;
+}
+.slider__inf:last-child {
+  margin-right: 0;
+}
+
+.slider__bold {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.slider__price {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-right: 10%;
+}
+.slider__price:last-child {
+  margin-right: 0;
+}
+
+.slider__batten {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .reviems::before {
@@ -931,6 +1049,11 @@ img {
           transform: translate(-50%, -50%);
   z-index: 100;
 }
+@media screen and (max-width: 1125px) {
+  .fixeb-menu {
+    right: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .fixeb-menu {
     display: none;
@@ -970,4 +1093,57 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #313131;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10000;
+}
+
+.close {
+  position: fixed;
+  top: 3%;
+  right: 3%;
+}
+
+.hamburger-menu__list {
+  font-size: 36px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.hamburger-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5%;
+}
+.hamburger-menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.hamburger-menu__link {
+  text-decoration: none;
 }
