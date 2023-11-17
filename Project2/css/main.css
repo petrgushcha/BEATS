@@ -563,16 +563,30 @@ img {
           justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+}
+
 .slider {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.item {
+.slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .slider__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .slider__column {
@@ -584,9 +598,76 @@ img {
 .slider__column:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 768px) {
+  .slider__column {
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider__column-img {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.arrow-768 {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .arrow-768 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider__img {
+    height: 17rem;
+    width: 17rem;
+    margin: 0 1.1111111111rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__img {
+    margin: 0 10%;
+  }
+}
 
 .slider__row {
   margin-bottom: 3%;
+}
+@media screen and (max-width: 768px) {
+  .slider__row {
+    text-align: center;
+  }
+}
+
+.slider__click:hover .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .slider__click {
+    display: none;
+  }
 }
 
 .slider__row-end {
@@ -602,6 +683,11 @@ img {
 .slider__text {
   margin-bottom: 3%;
 }
+@media screen and (max-width: 768px) {
+  .slider__text {
+    text-align: center;
+  }
+}
 
 .slider__block {
   display: -webkit-box;
@@ -613,12 +699,30 @@ img {
           flex-direction: row;
   height: 3.3333333333rem;
 }
+@media screen and (max-width: 768px) {
+  .slider__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .slider__inf {
   margin-right: 30%;
 }
 .slider__inf:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .slider__inf {
+    margin-right: 15%;
+  }
 }
 
 .slider__bold {
@@ -642,6 +746,58 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20.2222222222rem;
+  position: relative;
+}
+.dropdown:hover .dropdown__list {
+  display: block;
+}
+
+.dropdown__content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 20.2222222222rem;
+}
+
+.dropdown__list {
+  background-color: #fff;
+  padding: 1.6666666667rem;
+  border-radius: 0.5555555556rem;
+  display: none;
+}
+
+.dropdown__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.1111111111rem;
+}
+.dropdown__item:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown__img {
+  margin-right: 0.5555555556rem;
+}
+
+.dropdown__title {
+  color: #000;
+  margin-right: 2.8333333333rem;
+}
+
+.dropdown__text {
+  color: #000;
 }
 
 .reviems::before {
@@ -961,10 +1117,6 @@ img {
   color: #fff;
 }
 
-.footer__conteiner {
-  position: relative;
-}
-
 .map__section {
   position: relative;
 }
@@ -988,6 +1140,7 @@ img {
   height: 4.8333333333rem;
   position: absolute;
   bottom: 0rem;
+  left: 0;
 }
 @media screen and (max-width: 480px) {
   .footer {

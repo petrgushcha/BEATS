@@ -1,7 +1,3 @@
-.footer__conteiner{
-    position: relative;
-}
-
 .map__section{
     position: relative;
 }
@@ -19,6 +15,7 @@
     height: rem(87px);
     position: absolute;
     bottom: rem(0px);
+    left: 0;
 
     @include phones{
         min-height: rem(151px);

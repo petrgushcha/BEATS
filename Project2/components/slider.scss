@@ -17,12 +17,22 @@
     justify-content: center;
 }
 
+.arrow{
+    @include tablets{
+        display: none;
+    }
+}
+
 .slider{
     flex: 1;
 }
 
-.item{
+.slider__item{
     display: flex;
+
+    @include tablets{
+        flex-direction: column;
+    }
 }
 
 .slider__column{
@@ -32,10 +42,61 @@
     &:last-child{
         margin-right: 0;
     }
+
+    @include tablets{
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+}
+
+.slider__column-img{
+    @include tablets{
+        flex-direction: row;
+    }
+}
+
+.arrow-768{
+    display: none;
+
+    @include tablets{
+        display: flex;
+    }
+}
+
+.slider__img{
+    @include tablets{
+        height: rem(306px);
+        width: rem(306px);
+        margin: 0 rem(20px);      
+    }
+
+    @include phones{
+        margin: 0 10%;
+    }
 }
 
 .slider__row{
     margin-bottom: 3%;
+
+    @include tablets{
+        text-align: center;
+    }
+}
+
+.slider__click{
+
+    &:hover{
+        .dropdown{
+            display: flex;
+        }
+    }
+
+    @include tablets{
+        display: none;
+    }
 }
 
 .slider__row-end{
@@ -45,12 +106,22 @@
 
 .slider__text{
     margin-bottom: 3%;
+
+    @include tablets{
+        text-align: center;
+    }
 }
 
 .slider__block{
     display: flex;
     flex-direction: row;
     height: rem(60px);
+
+    @include tablets{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .slider__inf{
@@ -58,6 +129,10 @@
 
     &:last-child{
         margin-right: 0;
+    }
+
+    @include tablets{
+        margin-right: 15%;
     }
 }
 

@@ -1,0 +1,47 @@
+.dropdown{
+    display: flex;
+    width: rem(364px);
+    position: relative;
+
+    &:hover{
+       .dropdown__list {
+        display: block;
+       }
+    }
+}
+
+.dropdown__content{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    width: rem(364px);
+}
+
+.dropdown__list{
+    background-color: #fff;
+    padding: rem(30px);
+    border-radius: rem(10px);
+    display: none;
+}
+
+.dropdown__item{
+    display: flex;
+    margin-bottom: rem(20px);
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.dropdown__img{
+    margin-right: rem(10px);
+}
+
+.dropdown__title{
+    color: #000;
+    margin-right: rem(51px);
+}
+
+.dropdown__text{
+    color: #000;
+}
