@@ -4,8 +4,6 @@
 
 .map{
     position: absolute;
-    width: 100%;
-    height: 83%;
 }
 
 .footer{
@@ -16,9 +14,20 @@
     position: absolute;
     bottom: rem(0px);
     left: 0;
+    background-color: #fff;
 
     @include phones{
         min-height: rem(151px);
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.footer__conteiner{
+    display: flex;
+    flex-direction: row;
+
+    @include phones{
         flex-direction: column;
         justify-content: center;
     }
@@ -28,6 +37,11 @@
     font-size: $baseFontSize;
     font-weight: 400;
     color: $black;
+    
+    @include phones{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .footer__phont-number{
@@ -41,5 +55,15 @@
 .footer__contacts{
     @include phones{
         margin-bottom: rem(10px);
+    }
+}
+
+.social{
+    margin-left: auto;
+
+    @include phones{
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
     }
 }
