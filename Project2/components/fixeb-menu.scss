@@ -6,7 +6,7 @@
     z-index: $z-fixeb-menu;
 
     @include fixeb-menu{
-        right: 0;
+        display: none;
     }
 
     @include tablets{

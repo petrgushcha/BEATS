@@ -8,11 +8,26 @@
     }
 }
 
-.reviems__display{
+.reviems__display{ 
+    margin-bottom: rem(70px);
     background: #F8FAF9;
     padding: rem(50px) rem(49px) rem(34px);
-    margin-bottom: rem(70px);
+    min-height: rem(200px);
+}
+
+.reviems__list{
     position: relative;
+}
+
+.reviems__item{
+    position: absolute;
+    opacity: 0;
+}
+
+.active{
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
 }
 
 .reviems__title{

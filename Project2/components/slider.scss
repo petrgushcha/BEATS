@@ -24,11 +24,23 @@
 }
 
 .slider{
-    flex: 1;
+    flex: 1;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bx-wrapper{
+    box-shadow:none;
+    background: transparent;
+    border: 0;
+    margin: 0;
 }
 
 .slider__item{
     display: flex;
+    padding: rem(0px) rem(30px);
 
     @include tablets{
         flex-direction: column;
@@ -56,6 +68,10 @@
     @include tablets{
         flex-direction: row;
     }
+}
+
+.arrow{
+    min-width: rem(30px);
 }
 
 .arrow-768{
@@ -95,7 +111,7 @@
     }
 
     @include tablets{
-        display: none;
+        display: none !important;
     }
 }
 

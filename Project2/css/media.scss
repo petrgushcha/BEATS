@@ -15,7 +15,7 @@
 }
 
 @mixin fixeb-menu {
-    @media screen and (max-width: 1125px){
+    @media screen and (max-width: 1050px){
         @content;
     }
 }
