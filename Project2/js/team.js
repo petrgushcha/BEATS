@@ -22,7 +22,7 @@ $('.team__title').click(e =>{
     const container = $this.closest('.team');
     const elemContainer = $this.closest(".team__item");
 
-    if (elemContainer.hasClas("active")) {
+    if (elemContainer.hasClass("active")) {
         closeEveryItem(container);
     }else {
         closeEveryItem(container);

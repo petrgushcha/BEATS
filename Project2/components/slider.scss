@@ -17,9 +17,35 @@
     justify-content: center;
 }
 
-.arrow{
+.arrow__l{
+    position: absolute;
+    left: 0;
+    top: 50%;
+
     @include tablets{
-        display: none;
+        top: 20%;
+        left: 10%;
+    }
+
+    @include phones{
+        top: 50%;
+        left: 0;
+    }
+}
+
+.arrow__r{
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    @include tablets{
+        top: 20%;
+        right: 10%;
+    }
+
+    @include phones{
+        top: 50%;
+        right: 0;
     }
 }
 
@@ -29,6 +55,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .bx-wrapper{
@@ -67,18 +94,6 @@
 .slider__column-img{
     @include tablets{
         flex-direction: row;
-    }
-}
-
-.arrow{
-    min-width: rem(30px);
-}
-
-.arrow-768{
-    display: none;
-
-    @include tablets{
-        display: flex;
     }
 }
 
@@ -122,7 +137,7 @@
 
 .slider__text{
     margin-bottom: 3%;
-
+    
     @include tablets{
         text-align: center;
     }
