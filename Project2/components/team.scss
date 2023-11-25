@@ -91,3 +91,9 @@
         flex-direction: column;
     }
 }
+
+.active{
+    .team__img{
+        transform: rotate(180deg);
+    }
+}

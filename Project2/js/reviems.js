@@ -6,7 +6,7 @@ const findBlockByAlias =alias => {
 $(".interactive-avatar__link").click(e => {
     e.preventDefault();
 
-    const $this = $(e.currrentTarget);
+    const $this = $(e.currentTarget);
     const target = $this.attr("data-open");
     const itemToShow = findBlockByAlias(target);
     const curItem = $this.closest(".reviems__swither-item");

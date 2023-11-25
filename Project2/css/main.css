@@ -617,6 +617,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  width: 100%;
 }
 
 .bx-wrapper {
@@ -997,6 +998,11 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.active .team__img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .reviems::before {

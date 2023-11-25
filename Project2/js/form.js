@@ -48,7 +48,7 @@ $('.form').submit(e => {
                 })
             },
             error: data => {
-                const message =data.responseJSOn.message;
+                const message =data.responseJSON.message;
                 content.text(message);
                 modal.addClass("error-modal");
 

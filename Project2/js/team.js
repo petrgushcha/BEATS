@@ -10,7 +10,7 @@ const openItem = item =>{
 }
 
 const closeEveryItem = container => {
-    const items = container.find('team__content');
+    const items = container.find(".team__content");
     const itemContainer = container.find(".team__item");
 
     itemContainer.removeClass("active");
@@ -18,7 +18,7 @@ const closeEveryItem = container => {
 }
 
 $('.team__title').click(e =>{
-    const $this = $(e.currenTarget);
+    const $this = $(e.currentTarget);
     const container = $this.closest('.team');
     const elemContainer = $this.closest(".team__item");
 
