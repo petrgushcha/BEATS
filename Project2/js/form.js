@@ -6,7 +6,7 @@ const validateFields = (form, fieldsArray) => {
         }
     });
 
-    const errorFields = form.find("input-error");
+    const errorFields = form.find(".input-error");
 
     return errorFields.length == 0;
 }
@@ -39,7 +39,7 @@ $('.form').submit(e => {
                 comment: comment.val(),
                 to: to.val()
             },
-            success: data => {
+            success: (data) => {
                 content.text(data.message);
                 
                 $.fancybox.open({

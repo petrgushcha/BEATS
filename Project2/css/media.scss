@@ -1,5 +1,5 @@
 @function rem($px){
-    @return $px / $baseFontSize + 0rem
+    @return $px / $baseFontSize + 1rem
 }
 
 @mixin tablets {
@@ -10,12 +10,6 @@
 
 @mixin phones {
     @media screen and (max-width: $phones) {
-        @content;
-    }
-}
-
-@mixin fixeb-menu {
-    @media screen and (max-width: 1050px){
         @content;
     }
 }

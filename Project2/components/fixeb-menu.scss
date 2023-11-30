@@ -3,11 +3,7 @@
     top: 50%;
     right: 3%;
     transform: translate(-50%, -50%);
-    z-index: $z-fixeb-menu;
-
-    @include fixeb-menu{
-        display: none;
-    }
+    z-index: $z-fixeb-menu;   
 
     @include tablets{
         display: none;
@@ -19,16 +15,6 @@
 
     &:last-child{
         margin-bottom: rem(0px);
-    }
-
-    &--active{
-        .fixeb-menu__link{
-            border-color: $red;
-             
-            &::before{
-                background-color: $red;
-            }
-        }
     }
 }
 
@@ -52,4 +38,22 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+}
+
+.fixt-menu__active{
+    .fixeb-menu__link{
+        border-color: $red;
+         
+        &::before{
+            background-color: $red;
+        }
+    }
+}
+
+.fixeb-menu__white{    
+    border-color: #fff;
+         
+    &::before{
+        background-color: #fff;
+    }    
 }
