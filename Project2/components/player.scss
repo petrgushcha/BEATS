@@ -43,13 +43,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 rem(25);
+    padding: 0 rem(25px);
 }
 
 .paused{
     .player__start{
         width: rem(14px);
-        height: rem(22);
+        height: rem(22px);
         border: none;
 
         &::after,
