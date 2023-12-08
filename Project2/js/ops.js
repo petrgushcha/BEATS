@@ -1,6 +1,9 @@
 const sections = $("section");
 const display = $(".maincontent");
 
+//const mobileDetect = new mobileDetect(window.navigator.userAgent)
+//const isMobile = mobileDetect.mobile();
+
 let inScroll = false;
 
 sections.first().addClass("ops__active");
@@ -26,7 +29,6 @@ const performTransition = sectionEq => {
                 .addClass("fixt-menu__active")
                 .siblings()
                 .removeClass("fixt-menu__active");
-                console.log(sectionEq);
         }, 1300)
     }
 }
@@ -81,13 +83,19 @@ $("[data-scrol-to]").click(e => {
     const target = $this.attr("data-scrol-to");
     const reqSection = $(`[data-scrol-id=${target}]`);
 
-    console.log(reqSection.index());
-
     performTransition(target - 1);
 })
 
-$("body").swipe( {
-    swipe:function(event, direction) {
-      alert(direction);
-    }
-});
+if (isMobile) {
+    $("body").swipe( {
+        swipe:function(event, direction) {
+            const scroller = viewportScroller();
+            let scrollDirection = "";
+    
+            if (direction == "up") scrollDirection ="next";
+            if (direction == "down") scrollDirection = "prev";
+            
+            scroller[scrollDirection]();
+        }
+    });
+}

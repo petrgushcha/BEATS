@@ -460,7 +460,7 @@
                                         <article class="reviems__content">
                                             <h3 class="reviems_title">Отличный звук</h3>
                                             <div class="reviems__text">
-                                                <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно  и удобно. </p>
+                                                <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </p>
                                             </div>
                                             <div class="reviems__autor">Билли Айлиш</div>
                                         </article>
@@ -474,7 +474,7 @@
                                         <article class="reviems__content">
                                             <h3 class="reviems_title">Отличный звук</h3>
                                             <div class="reviems__text">
-                                                <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно  и удобно. </p>
+                                                <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </p>
                                             </div>
                                             <div class="reviems__autor">Вадим Грачев</div>
                                         </article>
@@ -488,7 +488,7 @@
                                         <article class="reviems__content">
                                             <h3 class="reviems_title">Отличный звук</h3>
                                             <div class="reviems__text">
-                                                <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно  и удобно. </p>
+                                                <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </p>
                                             </div>
                                             <div class="reviems__autor">Мария Орлова</div>
                                         </article>
@@ -520,15 +520,15 @@
                 <div class="conteiner">
                     <h1 class="section__title section__player-title">как мы работаем</h1>
                     <div class="player__conteiner">
-                        <div class="player play">
+                        <div class="player">
                             <div class="player__wrapper">
                                 <div id="yt-player" class="player__elem"></div>
                                 <div class="player__splash"></div>
                             </div>
                             <div class="player__controls">
-                                <botton class="player__start"></botton>
+                                <a class="player__start"></a>
                                 <div class="player__playback">
-                                    <button class="player__playback-button"></button>
+                                    <a class="player__playback-button"></a>
                                 </div>
                                 <div class="player__duration">
                                     <span class="player__duration-completed">0:00</span>
@@ -584,7 +584,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Коментарий</div>
-                                    <input type="text" name="comment" class="form__input form__input--textarea">
+                                    <textarea type="text" name="comment" class="form__input form__input--textarea"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -614,8 +614,8 @@
                     </form>
                 </div>
             </section>
-            <section data-section-id="9" class="section map__section">                
-                <img src="img/map.png" alt="map" class="map">
+            <section data-section-id="9" class="section map__section">
+                <div id="map" class="map"></div>
                 <footer class="footer">
                     <div class="conteiner footer__conteiner">
                         <div class="footer__contacts">
@@ -735,6 +735,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 	<script src="./js/form.js"></script>
 	<script src="./js/colors.js"></script>
-	<script src="./js/ops.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
+	<script src="./js/ops.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/player.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="./js/map.js"></script>
 </body>     

@@ -1196,6 +1196,16 @@ img {
   bottom: 0;
   background: url(../img/player.png) center/cover no-repeat;
 }
+.player__splash::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 46%;
+  right: 46%;
+  width: 2.7222222222rem;
+  height: 3.9444444444rem;
+  background: url(../img/Vector5.png) center/cover no-repeat;
+}
 
 .player__controls {
   position: absolute;
@@ -1216,12 +1226,65 @@ img {
   padding: 0 1.3888888889rem;
 }
 
+.player__start {
+  margin-right: 5%;
+  width: 0.6666666667rem;
+  height: 0.9444444444rem;
+}
+.player__start::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.6666666667rem;
+  height: 0.9444444444rem;
+  background: url(../img/Vector4.png) center/cover no-repeat;
+}
+
+.player__playback {
+  margin-right: 5%;
+}
+
+.player__playback {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  height: 100%;
+}
+.player__playback::before {
+  content: "";
+  height: 0.2222222222rem;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  background: #666666;
+  display: block;
+}
+
+.player__playback-button {
+  background: #E01F3D;
+  border-radius: 50%;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 0%;
+}
+
+.player__duration {
+  color: #fff;
+}
+
 .paused .player__start {
   width: 0.7777777778rem;
   height: 1.2222222222rem;
   border: none;
+  position: relative;
 }
-.paused .player__start::after, .paused .player__start::before {
+.paused .player__start::before {
   content: "";
   display: block;
   position: absolute;
@@ -1230,8 +1293,22 @@ img {
   bottom: 0;
   background: #fff;
 }
+.paused .player__start::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.2777777778rem;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+}
 
-.play .player__splash {
+.start .player__splash {
+  background: none;
+}
+
+.play .player__splash::before {
   display: none;
 }
 
@@ -1514,6 +1591,10 @@ img {
 
 .map {
   position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .footer {
