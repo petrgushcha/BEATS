@@ -1,8 +1,8 @@
 const sections = $("section");
 const display = $(".maincontent");
 
-//const mobileDetect = new mobileDetect(window.navigator.userAgent)
-//const isMobile = mobileDetect.mobile();
+const mobileDetect = new mobileDetect(window.navigator.userAgent)
+const isMobile = mobileDetect.mobile();
 
 let inScroll = false;
 
@@ -61,7 +61,7 @@ $(window).on("wheel", e => {
 
 $(window).on("keydown", e => {
 
-    const tegName =e.target.tegName.toLowerCase();
+    const tegName =e.target.tagName.toLowerCase();
 
     if (tegName != "input" && tegName != "textarea") {
         switch (e.keyCode) {
