@@ -63,7 +63,7 @@ $(window).on("keydown", e => {
 
     const tegName =e.target.tagName.toLowerCase();
 
-    if (tegName != "input" && tegName != "textarea") {
+    if (tegName != "input" && tagName != "textarea") {
         switch (e.keyCode) {
             case 38:
                 scrollViewport("prev");
